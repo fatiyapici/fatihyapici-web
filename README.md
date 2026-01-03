@@ -2,6 +2,8 @@
 
 A professional portfolio website built with HTML, CSS, and JavaScript, featuring Apple-style aesthetics and automated deployment to Hostinger.
 
+**Live Site:** [fatihyapici.com](https://fatihyapici.com)
+
 ## Project Structure
 
 - `index.html`: Main website content.
