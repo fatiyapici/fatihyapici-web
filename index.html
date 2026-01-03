@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fatih Yapici - Software Developer</title>
-    <meta name="description" content="Portfolio of Fatih Yapici, a Software Developer specializing in .NET Core and Web API development.">
+    <title>Fatih Yapıcı - Software Developer</title>
+    <meta name="description"
+        content="Portfolio of Fatih Yapıcı, a Software Developer specializing in .NET Core and Web API development.">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
     <!-- Hero Section -->
     <section id="hero" class="fade-in-section">
         <div class="container hero-container">
             <div class="hero-content">
-                <h1>Fatih Yapici.</h1>
-                <p>Software Developer specializing in .NET Core, C#, and scalable Web APIs.</p>
+                <!-- Wordplay on surname 'Yapıcı' (Builder) -->
+                <h1>Fatih Yapıcı.</h1>
+                <h2 class="hero-tagline">Building robust solutions.</h2>
+                <p>Advanced Software Developer specializing in .NET Core, Clean Architecture, and scalable Web APIs.
+                    Transforming complex requirements into efficient, maintainable code.</p>
                 <div class="hero-actions">
                     <a href="#projects" class="btn">View Projects</a>
                     <a href="#contact" class="btn btn-secondary">Contact Me</a>
                 </div>
             </div>
-            <!-- Placeholder for Profile Image - Ideally would be the user's photo -->
             <div class="hero-image">
-                 <!-- Using a div for now, but configured to hold the image -->
-                 <img src="assets/images/profile.jpg" alt="Fatih Yapici" onerror="this.style.display='none'">
+                <img src="assets/images/profile.jpg" alt="Fatih Yapıcı" onerror="this.style.display='none'">
             </div>
         </div>
     </section>
@@ -37,17 +41,23 @@
             <h2>About</h2>
             <div class="grid-2-col">
                 <div class="about-text">
-                    <p>Motivated entry-level professional with a degree in Business Administration and advanced qualification in software development. I have gathered practical experience through personal projects in the field of Web APIs. I work in a structured manner, love learning new things, and want to further develop my technical skills in a professional environment.</p>
+                    <p>I am a passionate technology enthusiast who believes in the power of continuous learning. While I
+                        operate independently, my approach to software development is deeply professional, rigorous, and
+                        structured. I dedicate myself to mastering modern architectural patterns and best practices,
+                        treating every line of code as a craft. I am eager to bring my deep technical analysis skills
+                        and disciplined work ethic to a professional team.</p>
                 </div>
                 <div class="skills-list">
                     <h3>Tech Stack</h3>
                     <div class="tags">
-                        <span class="tag">.NET Core</span>
+                        <span class="tag">.NET Core 8</span>
                         <span class="tag">C#</span>
-                        <span class="tag">Entity Framework</span>
-                        <span class="tag">SQL</span>
-                        <span class="tag">Git</span>
+                        <span class="tag">Entity Framework Core</span>
+                        <span class="tag">MS SQL Server</span>
+                        <span class="tag">Git & GitHub</span>
                         <span class="tag">Clean Architecture</span>
+                        <span class="tag">RESTful APIs</span>
+                        <span class="tag">SOLID Principles</span>
                     </div>
                 </div>
             </div>
@@ -60,28 +70,32 @@
             <h2>Experience</h2>
             <div class="timeline">
                 <div class="card timeline-item">
-                    <span class="date">05/2023 – 10/2025</span>
-                    <h3>Freelance Software Developer</h3>
-                    <p class="role">Project Based</p>
-                    <p>Independent implementation of small software projects in Web API development.</p>
+                    <span class="date">05/2023 – PRESENT</span>
+                    <h3>Independent Software Developer</h3>
+                    <p class="role">Self-Directed Career Development</p>
+                    <p>Conducting intensive R&D and executing full-cycle development of complex software solutions to
+                        bridge the gap between academic theory and industry standards.</p>
                     <ul>
-                        <li>Development and maintenance of small Web APIs for practice and learning purposes.</li>
-                        <li>Implementation of basic CRUD functions.</li>
-                        <li>Application of Clean Code principles and structured work.</li>
-                        <li>Use of Git for version control.</li>
+                        <li>Architecting and developing scalable Web APIs using .NET Core, strictly adhering to Clean
+                            Architecture principles.</li>
+                        <li>Implementing advanced data access layers with Entity Framework Core, optimizing for
+                            performance and maintainability.</li>
+                        <li>Mastering version control workflows with Git to simulate professional CI/CD environments.
+                        </li>
+                        <li>Continuously refactoring codebases to apply Design Patterns and SOLID principles.</li>
                     </ul>
                 </div>
             </div>
-            
-             <br>
-             <h2>Education</h2>
-             <div class="timeline">
+
+            <br>
+            <h2>Education</h2>
+            <div class="timeline">
                 <div class="card timeline-item">
                     <span class="date">09/2022 – 06/2024</span>
                     <h3>Computer Programming</h3>
                     <p>Anadolu University</p>
                 </div>
-                 <div class="card timeline-item">
+                <div class="card timeline-item">
                     <span class="date">09/2014 – 06/2021</span>
                     <h3>Business Administration (B.Sc.)</h3>
                     <p>Manisa Celal Bayar University</p>
@@ -93,27 +107,60 @@
     <!-- Projects Section -->
     <section id="projects" class="fade-in-section">
         <div class="container">
-            <h2>Selected Projects</h2>
+            <h2>Selected Works</h2>
             <div class="projects-grid">
-                <!-- Data from GitHub Scan -->
+
                 <div class="card project-card">
                     <h3>MovieStoreWebApi</h3>
-                    <p class="lang">C#</p>
-                    <p>patika.dev .NET Core Training Project</p>
-                    <a href="https://github.com/fatiyapici/MovieStoreWebApi" target="_blank" class="link-arrow">View Code ↗</a>
+                    <p class="lang">C# / .NET Core / EF Core</p>
+                    <p>A comprehensive RESTful API for managing a digital movie library. Features advanced querying,
+                        actor/director relationship mapping, and robust input validation.</p>
+                    <div class="mini-tags">
+                        <span>Clean Arch</span>
+                        <span>AutoMapper</span>
+                        <span>Validation</span>
+                    </div>
+                    <a href="https://github.com/fatiyapici/MovieStoreWebApi" target="_blank" class="link-arrow">View
+                        Code ↗</a>
                 </div>
+
                 <div class="card project-card">
                     <h3>BookStore</h3>
-                    <p class="lang">C#</p>
-                    <p>.NET Core Web Application Project</p>
+                    <p class="lang">C# / Web API</p>
+                    <p>Scalable backend service for an online bookstore. Demonstrates mastery of CRUD operations, global
+                        error handling, and dependency injection patterns.</p>
+                    <div class="mini-tags">
+                        <span>Middleware</span>
+                        <span>Dependency Injection</span>
+                    </div>
                     <a href="https://github.com/fatiyapici/BookStore" target="_blank" class="link-arrow">View Code ↗</a>
                 </div>
+
                 <div class="card project-card">
                     <h3>ToDoWebApi</h3>
-                    <p class="lang">C#</p>
-                    <p>Simple .NET Core Web Api Project</p>
-                    <a href="https://github.com/fatiyapici/ToDoWebApi" target="_blank" class="link-arrow">View Code ↗</a>
+                    <p class="lang">C# / .NET</p>
+                    <p>A high-performance task management API. Focuses on minimal API design, optimizing response times,
+                        and implementing secure data handling.</p>
+                    <div class="mini-tags">
+                        <span>Performance</span>
+                        <span>Security</span>
+                    </div>
+                    <a href="https://github.com/fatiyapici/ToDoWebApi" target="_blank" class="link-arrow">View Code
+                        ↗</a>
                 </div>
+
+                <div class="card project-card">
+                    <h3>SQL Practices</h3>
+                    <p class="lang">TSQL / MS SQL</p>
+                    <p>A collection of complex SQL queries, stored procedures, and database optimization techniques
+                        demonstrating strong data manipulation skills.</p>
+                    <div class="mini-tags">
+                        <span>Joins</span>
+                        <span>Stored Procedures</span>
+                    </div>
+                    <a href="https://github.com/fatiyapici/SQL" target="_blank" class="link-arrow">View Code ↗</a>
+                </div>
+
             </div>
         </div>
     </section>
@@ -121,20 +168,21 @@
     <!-- Contact Section -->
     <section id="contact" class="fade-in-section">
         <div class="container center-text">
-            <h2>Get in Touch</h2>
-            <p>Ready to contribute to your team. Let's connect.</p>
+            <h2>Ready to Build?</h2>
+            <p>I am eager to contribute my skills to a forward-thinking team. Let's discuss how I can add value.</p>
             <div class="contact-links">
                 <a href="mailto:fa.yapici@gmail.com" class="btn">Email Me</a>
                 <a href="https://www.linkedin.com/in/fatihyapici/" class="btn btn-secondary">LinkedIn</a>
                 <a href="https://github.com/fatiyapici" class="btn btn-secondary">GitHub</a>
             </div>
-            
+
             <footer class="footer">
-                <p>&copy; <span id="year"></span> Fatih Yapici. All rights reserved.</p>
+                <p>&copy; <span id="year"></span> Fatih Yapici. Built with passion.</p>
             </footer>
         </div>
     </section>
 
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>
