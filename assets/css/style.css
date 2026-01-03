@@ -249,28 +249,32 @@ section {
     .grid-2-col {
         grid-template-columns: 1fr;
         gap: 40px;
-    }
-
-    .hero-container {
-        flex-direction: column-reverse;
-        /* Image on top on mobile */
         text-align: center;
-        justify-content: center;
+        /* Center align text for mobile flow */
     }
 
-    .hero-actions {
-        justify-content: center;
+    /* Tech Stack Centering */
+    .skills-list h3 {
+        text-align: center;
     }
 
-    .hero-image {
+    .tags {
+        justify-content: center;
+        /* Center balloons */
+    }
+
+    /* Timeline Fixes */
+    .timeline {
+        border-left: 2px solid var(--border-color);
+        padding-left: 25px;
+        /* Reduced padding */
+        margin-left: 5px;
+        /* Reduced margin */
+        margin-right: 0;
+    }
+
+    .timeline-item {
         margin-bottom: 40px;
-    }
-
-    h1 {
-        font-size: 40px;
-    }
-
-    h2 {
         font-size: 28px;
     }
 }
