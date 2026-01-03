@@ -341,10 +341,75 @@ section {
     text-decoration: underline;
 }
 
-/* Timeline/Experience */
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(30, 30, 30, 0.85);
+    /* Matches VS Code bg */
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-color);
+    padding: 15px 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo img {
+    height: 40px;
+    /* Adjust based on signature aspect ratio */
+    filter: invert(1);
+    /* Invert black signature to white for dark mode */
+    opacity: 0.9;
+    transition: var(--transition-smooth);
+}
+
+.nav-logo:hover img {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-main);
+    font-size: 15px;
+    font-weight: 500;
+    transition: var(--transition-smooth);
+}
+
+.nav-links a:hover {
+    color: var(--accent-blue);
+}
+
+.btn-nav {
+    background: rgba(86, 156, 214, 0.1);
+    color: var(--accent-blue) !important;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.btn-nav:hover {
+    background: var(--accent-blue);
+    color: white !important;
+}
+
+/* Timeline/Experience - Symmetrical Fix */
 .timeline {
     border-left: 2px solid var(--border-color);
-    padding-left: 30px;
+    padding-left: 40px;
     margin-left: 10px;
 }
 
@@ -353,17 +418,30 @@ section {
     margin-bottom: 50px;
 }
 
+.timeline-item h3 {
+    margin-top: -5px;
+    /* Align text vertically with dot */
+}
+
 .timeline-item::before {
     content: '';
     position: absolute;
-    left: -36px;
-    top: 5px;
-    width: 10px;
-    height: 10px;
+    left: -47px;
+    /* Perfectly centered on the line */
+    top: 0;
+    width: 12px;
+    height: 12px;
     background: var(--bg-color);
     /* Cutout effect */
-    border: 2px solid var(--accent-blue);
+    border: 3px solid var(--accent-blue);
     border-radius: 50%;
+    z-index: 1;
+    transition: var(--transition-smooth);
+}
+
+.timeline-item:hover::before {
+    background: var(--accent-blue);
+    box-shadow: 0 0 10px var(--accent-blue);
 }
 
 .timeline .date {
