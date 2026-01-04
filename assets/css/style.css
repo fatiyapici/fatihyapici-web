@@ -78,6 +78,10 @@ body {
     padding: 0 40px;
 }
 
+.center-text {
+    text-align: center;
+}
+
 /* Typography Utilities */
 h1,
 h2,
@@ -524,6 +528,13 @@ section {
     text-decoration: underline;
 }
 
+/* Navigation Right Side (Links + Lang) */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
 /* Navbar */
 .navbar {
     position: fixed;
@@ -542,6 +553,42 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+/* Language Switcher */
+.lang-switcher {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-mono);
+    font-size: 13px;
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 1px solid var(--border-color);
+}
+
+.lang-btn {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    padding: 2px 5px;
+    font-weight: 500;
+    transition: var(--transition-smooth);
+}
+
+.lang-btn:hover {
+    color: var(--text-main);
+}
+
+.lang-btn.active {
+    color: var(--accent-green);
+    font-weight: 700;
+}
+
+.divider {
+    color: var(--border-color);
+    font-size: 10px;
 }
 
 .nav-logo img {
@@ -587,6 +634,27 @@ section {
 .btn-nav:hover {
     background: var(--accent-blue);
     color: white !important;
+}
+
+/* Mobile Responsiveness for Nav Switcher */
+@media (max-width: 768px) {
+    .nav-right {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .lang-switcher {
+        margin-left: 0;
+        padding-left: 0;
+        border-left: none;
+        border-top: 1px solid var(--border-color);
+        /* Top border instead of left */
+        padding-top: 10px;
+        width: 100%;
+        justify-content: center;
+    }
 }
 
 /* Timeline/Experience - Symmetrical Fix */
@@ -644,9 +712,58 @@ section {
 }
 
 /* Contact Links */
+/* Contact Links */
 .contact-links {
     display: flex;
     justify-content: center;
-    gap: 25px;
+    align-items: center;
+    gap: 30px;
     margin: 50px 0 80px;
+}
+
+.social-row {
+    display: flex;
+    gap: 5px;
+    /* Minimized gap */
+}
+
+.btn-icon {
+    background: transparent;
+    color: #ffffff;
+    border: none;
+    padding: 0;
+    width: 44px;
+    /* Maintain touch target size */
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-smooth);
+}
+
+.btn-icon:hover {
+    background: transparent;
+    color: var(--accent-blue);
+    /* Hover color */
+    transform: scale(1.2);
+    /* Hover effect */
+    box-shadow: none;
+}
+
+/* Fix Mobile Navbar Overlap & Contact Layout */
+@media (max-width: 768px) {
+    .navbar {
+        position: relative;
+        /* Re-affirm relative positioning to prevent overlap */
+    }
+
+    .contact-links {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    /* Ensure Email button is not full width but nice and clickable */
+    .contact-links .btn {
+        min-width: 200px;
+    }
 }

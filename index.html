@@ -21,12 +21,24 @@
             <a href="#" class="nav-logo">
                 <img src="assets/images/signature.png" alt="Fatih Yapıcı Signature">
             </a>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Work</a></li>
-                <li><a href="#contact" class="btn-nav">Contact</a></li>
-            </ul>
+
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="#about" data-i18n="nav_about">About</a></li>
+                    <li><a href="#experience" data-i18n="nav_experience">Experience</a></li>
+                    <li><a href="#projects" data-i18n="nav_work">Work</a></li>
+                    <li><a href="#contact" class="btn-nav" data-i18n="nav_contact">Contact</a></li>
+                </ul>
+
+                <!-- Language Switcher -->
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <span class="divider">|</span>
+                    <button class="lang-btn" data-lang="tr">TR</button>
+                    <span class="divider">|</span>
+                    <button class="lang-btn" data-lang="de">DE</button>
+                </div>
+            </div>
         </div>
     </nav>
 
@@ -36,12 +48,13 @@
             <div class="hero-content">
                 <!-- Wordplay on surname 'Yapıcı' (Builder) -->
                 <h1>Fatih Yapıcı.</h1>
-                <h2 class="hero-tagline">Building robust solutions.</h2>
-                <p>Passionate Software Developer specializing in .NET Core, Clean Architecture, and scalable Web APIs.
-                    Eager to transform complex requirements into efficient, maintainable code.</p>
+                <h2 class="hero-tagline" data-i18n="hero_tagline">Building robust solutions.</h2>
+                <p data-i18n="hero_desc">Passionate Software Developer specializing in .NET Core, Clean Architecture,
+                    and scalable Web APIs. Eager to transform complex requirements into efficient, maintainable code.
+                </p>
                 <div class="hero-actions">
-                    <a href="#projects" class="btn">View Projects</a>
-                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    <a href="#projects" class="btn" data-i18n="hero_btn_projects">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary" data-i18n="hero_btn_contact">Contact Me</a>
                 </div>
             </div>
             <div class="hero-image">
@@ -53,17 +66,17 @@
     <!-- About Section -->
     <section id="about" class="fade-in-section">
         <div class="container">
-            <h2>About</h2>
+            <h2 data-i18n="about_heading">About</h2>
             <div class="grid-2-col">
                 <div class="about-text">
-                    <p>I am a passionate technology enthusiast who believes in the power of continuous learning. While I
-                        operate independently, my approach to software development is deeply professional, rigorous, and
-                        structured. I dedicate myself to mastering modern architectural patterns and best practices,
-                        treating every line of code as a craft. I am eager to bring my deep technical analysis skills
-                        and disciplined work ethic to a professional team.</p>
+                    <p data-i18n="about_text">I am a passionate technology enthusiast who believes in the power of
+                        continuous learning. While I operate independently, my approach to software development is
+                        deeply professional, rigorous, and structured. I dedicate myself to mastering modern
+                        architectural patterns and best practices, treating every line of code as a craft. I am eager to
+                        bring my deep technical analysis skills and disciplined work ethic to a professional team.</p>
                 </div>
                 <div class="skills-list">
-                    <h3>Tech Stack</h3>
+                    <h3 data-i18n="skills_heading">Tech Stack</h3>
                     <div class="tags">
                         <span class="tag">.NET Core 8</span>
                         <span class="tag">C#</span>
@@ -82,38 +95,42 @@
     <!-- Experience Section -->
     <section id="experience" class="fade-in-section">
         <div class="container">
-            <h2>Experience</h2>
+            <h2 data-i18n="exp_heading">Experience</h2>
             <div class="timeline">
                 <div class="card timeline-item">
                     <span class="date">05/2023 – PRESENT</span>
-                    <h3>Independent Software Developer</h3>
-                    <p class="role">Self-Directed Career Development</p>
-                    <p>Conducting intensive R&D and executing full-cycle development of complex software solutions to
-                        bridge the gap between academic theory and industry standards.</p>
+                    <h3 data-i18n="exp_role_indie">Independent Software Developer</h3>
+                    <p class="role" data-i18n="exp_type_indie"></p>
+                    <p data-i18n="exp_desc_indie">Conducting intensive R&D and executing full-cycle development of
+                        complex software solutions to bridge the gap between academic theory and industry standards.</p>
                     <ul>
-                        <li>Architecting and developing scalable Web APIs using .NET Core, strictly adhering to Clean
+                        <li data-i18n="exp_bullet_1">Architecting and developing scalable Web APIs using .NET Core,
+                            strictly adhering to Clean
                             Architecture principles.</li>
-                        <li>Implementing advanced data access layers with Entity Framework Core, optimizing for
+                        <li data-i18n="exp_bullet_2">Implementing advanced data access layers with Entity Framework
+                            Core, optimizing for
                             performance and maintainability.</li>
-                        <li>Mastering version control workflows with Git to simulate professional CI/CD environments.
+                        <li data-i18n="exp_bullet_3">Mastering version control workflows with Git to simulate
+                            professional CI/CD environments.
                         </li>
-                        <li>Continuously refactoring codebases to apply Design Patterns and SOLID principles.</li>
+                        <li data-i18n="exp_bullet_4">Continuously refactoring codebases to apply Design Patterns and
+                            SOLID principles.</li>
                     </ul>
                 </div>
             </div>
 
             <br>
-            <h2>Education</h2>
+            <h2 data-i18n="exp_edu_heading">Education</h2>
             <div class="timeline">
                 <div class="card timeline-item">
                     <span class="date">09/2022 – 06/2024</span>
-                    <h3>Computer Programming</h3>
-                    <p>Anadolu University</p>
+                    <h3 data-i18n="edu_prog_title">Computer Programming</h3>
+                    <p data-i18n="edu_prog_school">Anadolu University</p>
                 </div>
                 <div class="card timeline-item">
                     <span class="date">09/2014 – 06/2021</span>
-                    <h3>Business Administration (B.Sc.)</h3>
-                    <p>Manisa Celal Bayar University</p>
+                    <h3 data-i18n="edu_bus_title">Business Administration (B.Sc.)</h3>
+                    <p data-i18n="edu_bus_school">Manisa Celal Bayar University</p>
                 </div>
             </div>
         </div>
@@ -122,58 +139,61 @@
     <!-- Projects Section -->
     <section id="projects" class="fade-in-section">
         <div class="container">
-            <h2>Selected Works</h2>
+            <h2 data-i18n="proj_heading">Selected Works</h2>
             <div class="projects-grid">
 
                 <div class="card project-card">
                     <h3>MovieStoreWebApi</h3>
                     <p class="lang">C# / .NET Core / EF Core</p>
-                    <p>A comprehensive RESTful API for managing a digital movie library. Features advanced querying,
-                        actor/director relationship mapping, and robust input validation.</p>
+                    <p data-i18n="proj_movie_desc">A comprehensive RESTful API for managing a digital movie library.
+                        Features advanced querying, actor/director relationship mapping, and robust input validation.
+                    </p>
                     <div class="mini-tags">
                         <span>Clean Arch</span>
                         <span>AutoMapper</span>
                         <span>Validation</span>
                     </div>
-                    <a href="https://github.com/fatiyapici/MovieStoreWebApi" target="_blank" class="link-arrow">View
-                        Code ↗</a>
+                    <a href="https://github.com/fatiyapici/MovieStoreWebApi" target="_blank" class="link-arrow"
+                        data-i18n="proj_link_view">View Code ↗</a>
                 </div>
 
                 <div class="card project-card">
                     <h3>BookStore</h3>
                     <p class="lang">C# / Web API</p>
-                    <p>Scalable backend service for an online bookstore. Demonstrates mastery of CRUD operations, global
-                        error handling, and dependency injection patterns.</p>
+                    <p data-i18n="proj_book_desc">Scalable backend service for an online bookstore. Demonstrates mastery
+                        of CRUD operations, global error handling, and dependency injection patterns.</p>
                     <div class="mini-tags">
                         <span>Middleware</span>
                         <span>Dependency Injection</span>
                     </div>
-                    <a href="https://github.com/fatiyapici/BookStore" target="_blank" class="link-arrow">View Code ↗</a>
+                    <a href="https://github.com/fatiyapici/BookStore" target="_blank" class="link-arrow"
+                        data-i18n="proj_link_view">View Code ↗</a>
                 </div>
 
                 <div class="card project-card">
                     <h3>ToDoWebApi</h3>
                     <p class="lang">C# / .NET</p>
-                    <p>A high-performance task management API. Focuses on minimal API design, optimizing response times,
-                        and implementing secure data handling.</p>
+                    <p data-i18n="proj_todo_desc">A high-performance task management API. Focuses on minimal API design,
+                        optimizing response times, and implementing secure data handling.</p>
                     <div class="mini-tags">
                         <span>Performance</span>
                         <span>Security</span>
                     </div>
-                    <a href="https://github.com/fatiyapici/ToDoWebApi" target="_blank" class="link-arrow">View Code
-                        ↗</a>
+                    <a href="https://github.com/fatiyapici/ToDoWebApi" target="_blank" class="link-arrow"
+                        data-i18n="proj_link_view">View Code ↗</a>
                 </div>
 
                 <div class="card project-card">
                     <h3>SQL Practices</h3>
                     <p class="lang">TSQL / MS SQL</p>
-                    <p>A collection of complex SQL queries, stored procedures, and database optimization techniques
-                        demonstrating strong data manipulation skills.</p>
+                    <p data-i18n="proj_sql_desc">A collection of complex SQL queries, stored procedures, and database
+                        optimization techniques demonstrating strong data manipulation skills.</p>
                     <div class="mini-tags">
                         <span>Joins</span>
                         <span>Stored Procedures</span>
                     </div>
-                    <a href="https://github.com/fatiyapici/SQL" target="_blank" class="link-arrow">View Code ↗</a>
+                    <a href="https://github.com/fatiyapici/SQL" target="_blank" class="link-arrow"
+                        data-i18n="proj_link_view">View Code ↗</a>
                 </div>
 
             </div>
@@ -183,20 +203,37 @@
     <!-- Contact Section -->
     <section id="contact" class="fade-in-section">
         <div class="container center-text">
-            <h2>Ready to Build?</h2>
-            <p>I am eager to contribute my skills to a forward-thinking team. Let's discuss how I can add value.</p>
+            <h2 data-i18n="contact_heading">Ready to Build?</h2>
+            <p data-i18n="contact_desc">I am eager to contribute my skills to a forward-thinking team. Let's discuss how
+                I can add value.</p>
             <div class="contact-links">
-                <a href="mailto:fa.yapici@gmail.com" class="btn">Email Me</a>
-                <a href="https://www.linkedin.com/in/fatihyapici/" class="btn btn-secondary">LinkedIn</a>
-                <a href="https://github.com/fatiyapici" class="btn btn-secondary">GitHub</a>
+                <a href="mailto:fa.yapici@gmail.com" class="btn" data-i18n="contact_btn_email">Email Me</a>
+                <div class="social-row">
+                    <a href="https://www.linkedin.com/in/fatihyapici/" class="btn btn-icon" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                    </a>
+                    <a href="https://github.com/fatiyapici" class="btn btn-icon" aria-label="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
+                    </a>
+                </div>
             </div>
 
             <footer class="footer">
-                <p>&copy; <span id="year"></span> Fatih Yapici. Built with passion.</p>
+                <p>&copy; <span id="year"></span> <span data-i18n="footer_text">Fatih Yapici. Built with passion.</span>
+                </p>
             </footer>
         </div>
     </section>
 
+    <script src="assets/js/translations.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 
