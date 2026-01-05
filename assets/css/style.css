@@ -566,13 +566,19 @@ section {
 }
 
 .lang-btn {
-    background: none;
+    background: transparent;
+    /* Explicit transparent */
     border: none;
     color: var(--text-secondary);
     cursor: pointer;
     padding: 2px 5px;
     font-weight: 500;
     transition: var(--transition-smooth);
+    -webkit-appearance: none;
+    /* Remove iOS default button styling */
+    -webkit-tap-highlight-color: transparent;
+    /* Remove tap highlight */
+    outline: none;
 }
 
 .lang-btn:hover {
@@ -749,10 +755,18 @@ section {
 }
 
 /* Fix Mobile Navbar Overlap & Contact Layout */
+/* Fix Mobile Navbar Overlap & Contact Layout */
 @media (max-width: 768px) {
     .navbar {
         position: relative;
         /* Re-affirm relative positioning to prevent overlap */
+        margin-bottom: 20px;
+        /* Add spacing below navbar */
+    }
+
+    .hero-container {
+        padding-top: 20px;
+        /* Additional spacing for hero content */
     }
 
     .contact-links {
