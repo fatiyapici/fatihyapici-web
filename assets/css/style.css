@@ -757,24 +757,34 @@ section {
 /* Fix Mobile Navbar Overlap & Contact Layout */
 /* Fix Mobile Navbar Overlap & Contact Layout */
 @media (max-width: 768px) {
+
+    /* Adjust global section padding for mobile to be proportional */
+    section {
+        padding: 50px 20px;
+    }
+
     .navbar {
         position: relative;
-        /* Re-affirm relative positioning to prevent overlap */
-        margin-bottom: 20px;
-        /* Add spacing below navbar */
+        margin-bottom: 0;
+        /* Reduced as section padding handles it */
     }
 
     .hero-container {
-        padding-top: 20px;
-        /* Additional spacing for hero content */
+        padding-top: 30px;
+        padding-bottom: 30px;
+        /* Reduced from 60px */
+    }
+
+    /* Reduce gap between About components (Text/Skills) */
+    .grid-2-col {
+        gap: 30px;
     }
 
     .contact-links {
         flex-direction: column;
-        gap: 25px;
+        gap: 20px;
     }
 
-    /* Ensure Email button is not full width but nice and clickable */
     .contact-links .btn {
         min-width: 200px;
     }
